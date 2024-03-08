@@ -1,0 +1,208 @@
+.root{
+  --gradient-color-bg:linear-gradient(180deg,rgba(247,1,120,1)0%,
+                                              rgba(160,8,156,1)51%,
+                                              rgba(99,13,178,1)100%);
+  --main-color:#e6006d;  
+  --hover-box-shadow:rgba(0,0,0,0.19)0px 10px 20px,
+  rgba(0,0,0,0.23)0px 6px 6px;  
+}
+
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: azure;
+  }
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-left: 60px;
+  }
+  
+  .header-content h1 {
+    font-size: 4rem;
+    font-family: "Saira", sans-serif;
+    color: rgba(0, 0, 0, 0.863);
+    margin-top: 0px;
+  }
+
+  .header-content h2 {
+    color: #70667fd4;
+    padding-top: 20px;
+    font-size: 2em;
+  }
+  
+  .header-content p {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    color: #70667f;
+  }
+  
+  .header-content .fullname {
+    font-size: 3rem;
+    margin-top: -30px;
+    color: rgba(0, 0, 0, 0.66);
+    font-family: "Play", sans-serif;
+  }
+  .header-content .developer {
+    color: rgba(0, 0, 0, 0.863);
+    margin-top: -30px;
+  }
+
+  .developer span{
+    color: rgba(0, 0, 0, 0.66);
+  }
+  
+  .header-payment-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    width: 90%;
+  }
+
+  
+  .header-payment-container button {
+    background:  var(--gradient-color-bg);
+    margin: 10px;
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-family: "Play" sans-serif;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+  }
+  .header-payment-container button a{
+    text-decoration: none;
+  }
+
+  .header-payment-container button:hover{
+    cursor: pointer;
+    background: rgba(95, 158, 160, 0.228);
+    color: black;
+    box-shadow: var(--hover-box-shadow);
+  }
+  
+ 
+  /* Social Icon */
+  .with-me h2{
+    padding-left: 110px;
+    padding-bottom: 50px;
+    color: rgba(0, 0, 0, 0.701);
+  }
+  .social-media{
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    height: 45px;
+}
+.social-media a{
+    width: 42px;
+    height: 42px;
+    font-size: 1.5rem;
+    color: var(--main-color);
+    background: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    border-radius: 50%;
+    z-index: 1;
+}
+.social-media a:hover{
+    background: var(--gradient-color-bg);
+    color: #fff;
+}
+.bg-icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+.bg-icon span{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: var(--gradient-color-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: animate 1s linear infinite;
+}
+.bg-icon img{
+  width: 40px;
+}
+
+  /* Profile Image */
+  .profile-img-container {
+    position: relative;
+  }
+  
+  .profile-img-container img {
+    width: 90%;
+    height: 90%;
+    border-bottom: 10px solid rgba(247,1,120,1);
+    border-left: 10px solid rgba(99,13,178,1);
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px;
+  }
+  
+  .circle-1 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    bottom: 0;
+    margin: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-bottom: 10px solid rgba(160,8,156,1);
+    border-radius: 16px;
+  }
+  
+  .circle-2 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    bottom: 0;
+    right: 10px;
+    top: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-bottom: 10px solid rgba(160,8,156,1);
+    border-radius: 16px;
+  }
+
+  
+  /* Media query */
+  @media (min-width: 788px) {
+    .header-container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-content {
+      width: 60%;
+    }
+    .profile-img-container {
+      width: 50%;
+    }
+    .header-payment-container {
+      justify-content: flex-start;
+    }
+    .header-payment-container i {
+      margin: 10px;
+    }
+  }
+  
+
