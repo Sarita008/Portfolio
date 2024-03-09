@@ -19,7 +19,7 @@ const Header = () => {
          <span>I'm a {""} </span> 
           <Typical
             steps={[
-              "Full Stack Developer 🚀",
+              "Full Stack Web Developer 🚀",
               1000,
               "Frontend Developer ✅",
               1000,

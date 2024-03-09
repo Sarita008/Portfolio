@@ -43,10 +43,6 @@ const sendEmail = (firstname, lastname, email, subject, message)=>{
       setClicked(true);
     })
     .catch(()=>{setClicked(false)});
-
-
-
-
 }
 
 const onSubmitHandler = (e)=>{
@@ -60,7 +56,7 @@ const onSubmitHandler = (e)=>{
     <div className='contact-info'>
         <div className="main-text">
           <h2 className="heading">Contact Me</h2>
-          <span>get in touch with me</span>
+          <span>Get in touch with me</span>
         </div>
         <form action="#">
         <div className="input-box">
