@@ -9,11 +9,6 @@ const Contact = () => {
   const [subject, setSubject] = useState("");
   const [messageContent, setMessageContent] = useState("");
   const [clicked ,setClicked]=useState(null);
-  const myFrist = useRef();
-  const myLast = useRef();
-  const myEmail = useRef();
-  const mySubject = useRef();
-  const myMessage = useRef();
 
 const onChangeFNameHandler = (e)=>{
     setFirstname(e.target.value);
@@ -45,6 +40,7 @@ const sendEmail = (firstname, lastname, email, subject, message)=>{
     .catch(()=>{setClicked(false)});
 }
 
+//console.log(firstname, lastname, email, subject,messageContent);
 const onSubmitHandler = (e)=>{
   e.preventDefault();
   sendEmail(firstname, lastname, email, subject, messageContent);
@@ -60,12 +56,12 @@ const onSubmitHandler = (e)=>{
         </div>
         <form action="#">
         <div className="input-box">
-             <input onClick={onChangeFNameHandler} ref={myFrist} name='firstname' type="text" placeholder="First Name" />
-            <input onClick={onChangeLNameHandler} ref={myLast} name='lastname' type="text" placeholder="Last Name" />
+             <input onChange={onChangeFNameHandler} name='firstname' type="text" placeholder="First Name" />
+            <input onChange={onChangeLNameHandler} name='lastname' type="text" placeholder="Last Name" />
         </div>
-            <input onClick={onChangeEmailHandler} ref={myEmail} name="email" type="email" placeholder="Email" />
-            <input onClick={onChangeSubjectHandler} ref={mySubject} name="subject" type="text" placeholder="Subject" />
-            <textarea onClick={onChangeMessageContentHandler} ref={myMessage} name="messageConetnt" id="" cols="30" rows="10">
+            <input onChange={onChangeEmailHandler} name="email" type="email" placeholder="Email" />
+            <input onChange={onChangeSubjectHandler} name="subject" type="text" placeholder="Subject" />
+            <textarea onChange={onChangeMessageContentHandler} name="messageConetnt" id="" cols="30" rows="10">
             </textarea>
             {clicked == true && <p style={{color: "green"}}>Email sent</p>}
             
