@@ -5,7 +5,7 @@ import "./Header.css";
 import github from "../../assets/github.png";
 import linekdin from "../../assets/linkedin.png";
 import email from "../../assets/email.png";
-import cv from "../../assets/Sarita_Resume.pdf";
+import cv from "../../assets/Resume.pdf";
 
 const Header = () => {
   return (
