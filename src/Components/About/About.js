@@ -41,7 +41,7 @@ const onclickCertificate = function(){
         <div className="intro">
           <p><span className="title-s">Name : </span> <span className='title-p'>Sarita Sharma</span></p>
           <p><span className="title-s">Job Role : </span> <span className='title-p'>MERN Stack Web Developer</span></p>
-          <p><span className="title-s">Address : </span> <span className='title-p'>Jewar, UP,G:B Nagar</span></p>
+          <p><span className="title-s">Address : </span> <span className='title-p'>Jewar, UP</span></p>
         </div>
       </div>
 
