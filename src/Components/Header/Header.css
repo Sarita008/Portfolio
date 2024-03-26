@@ -47,7 +47,7 @@
   .header-content .fullname {
     font-size: 3rem;
     color: rgba(0, 0, 0, 0.66);
-    font-family: "Play", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
   }
   .header-content .developer {

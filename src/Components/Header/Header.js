@@ -5,7 +5,7 @@ import "./Header.css";
 import github from "../../assets/github.png";
 import linekdin from "../../assets/linkedin.png";
 import email from "../../assets/email.png";
-import cv from "../../assets/Resume.pdf";
+
 
 const Header = () => {
   return (
@@ -41,7 +41,7 @@ const Header = () => {
         
         <div className="header-payment-container">
           <a href="#contactMe"> <button>Hire Me</button> </a>
-          <a href={cv}> <button>Download Cv</button> </a>
+          <a href="https://drive.google.com/file/d/1anNxIVBP3qytsCoGicZ5fh9tdytgpuVf/view?usp=sharing"> <button>Download CV</button> </a>
         </div>
 
          {/* Social Icons */}
